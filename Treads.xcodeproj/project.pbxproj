@@ -50,6 +50,7 @@
 		70957483239969EE00DA5687 /* MontserratAlternates-ExtraLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7095745F239969ED00DA5687 /* MontserratAlternates-ExtraLightItalic.otf */; };
 		70957484239969EE00DA5687 /* Montserrat-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 70957460239969ED00DA5687 /* Montserrat-BlackItalic.otf */; };
 		70957485239969EE00DA5687 /* Montserrat-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 70957461239969EE00DA5687 /* Montserrat-MediumItalic.otf */; };
+		70C8DA932399B5250005EFD9 /* CurrentRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C8DA922399B5250005EFD9 /* CurrentRunVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		7095745F239969ED00DA5687 /* MontserratAlternates-ExtraLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-ExtraLightItalic.otf"; sourceTree = "<group>"; };
 		70957460239969ED00DA5687 /* Montserrat-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.otf"; sourceTree = "<group>"; };
 		70957461239969EE00DA5687 /* Montserrat-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.otf"; sourceTree = "<group>"; };
+		70C8DA922399B5250005EFD9 /* CurrentRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRunVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 			children = (
 				709574262399376C00DA5687 /* BeginRunVC.swift */,
 				709574282399376C00DA5687 /* RunLogVC.swift */,
+				70C8DA922399B5250005EFD9 /* CurrentRunVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C8DA932399B5250005EFD9 /* CurrentRunVC.swift in Sources */,
 				709574292399376C00DA5687 /* RunLogVC.swift in Sources */,
 				709574272399376C00DA5687 /* BeginRunVC.swift in Sources */,
 				709574232399376C00DA5687 /* AppDelegate.swift in Sources */,

@@ -80,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
-        <!--View Controller-->
+        <!--Current RunVC-->
         <scene sceneID="Cel-v5-eEg">
             <objects>
-                <viewController id="lSX-GT-wt8" sceneMemberID="viewController">
+                <viewController id="lSX-GT-wt8" customClass="CurrentRunVC" customModule="Treads" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hHL-cx-ITk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
