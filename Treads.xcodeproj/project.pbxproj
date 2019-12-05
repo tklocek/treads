@@ -137,8 +137,6 @@
 				70957438239944C000DA5687 /* Resources */,
 				709574222399376C00DA5687 /* AppDelegate.swift */,
 				709574242399376C00DA5687 /* SceneDelegate.swift */,
-				709574262399376C00DA5687 /* BeginRunVC.swift */,
-				709574282399376C00DA5687 /* RunLogVC.swift */,
 				7095742A2399376C00DA5687 /* Main.storyboard */,
 				7095742D2399377000DA5687 /* Assets.xcassets */,
 				7095742F2399377000DA5687 /* LaunchScreen.storyboard */,
@@ -193,6 +191,8 @@
 		70957439239944C900DA5687 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				709574262399376C00DA5687 /* BeginRunVC.swift */,
+				709574282399376C00DA5687 /* RunLogVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
