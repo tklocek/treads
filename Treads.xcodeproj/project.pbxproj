@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		702C05F023A2AE2B00D395B9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702C05EF23A2AE2B00D395B9 /* Extensions.swift */; };
 		709574232399376C00DA5687 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709574222399376C00DA5687 /* AppDelegate.swift */; };
 		709574252399376C00DA5687 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709574242399376C00DA5687 /* SceneDelegate.swift */; };
 		709574272399376C00DA5687 /* BeginRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709574262399376C00DA5687 /* BeginRunVC.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		702C05EF23A2AE2B00D395B9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7095741F2399376C00DA5687 /* Treads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Treads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		709574222399376C00DA5687 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		709574242399376C00DA5687 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				7095743D2399451F00DA5687 /* Utilities */,
-				7095743C239944E300DA5687 /* Extenstions */,
+				7095743C239944E300DA5687 /* Extensions */,
 				7095743A239944D200DA5687 /* View */,
 				70957439239944C900DA5687 /* Controller */,
 				70957438239944C000DA5687 /* Resources */,
@@ -210,11 +212,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		7095743C239944E300DA5687 /* Extenstions */ = {
+		7095743C239944E300DA5687 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				702C05EF23A2AE2B00D395B9 /* Extensions.swift */,
 			);
-			path = Extenstions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		7095743D2399451F00DA5687 /* Utilities */ = {
@@ -337,6 +340,7 @@
 				709574232399376C00DA5687 /* AppDelegate.swift in Sources */,
 				709574252399376C00DA5687 /* SceneDelegate.swift in Sources */,
 				70A2516B239E5BB000699659 /* LocationVC.swift in Sources */,
+				702C05F023A2AE2B00D395B9 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
