@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -54,6 +54,7 @@
 		70957485239969EE00DA5687 /* Montserrat-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 70957461239969EE00DA5687 /* Montserrat-MediumItalic.otf */; };
 		70A2516B239E5BB000699659 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A2516A239E5BB000699659 /* LocationVC.swift */; };
 		70C8DA932399B5250005EFD9 /* CurrentRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C8DA922399B5250005EFD9 /* CurrentRunVC.swift */; };
+		70D46D9123A40A4000C35B1A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D46D9023A40A4000C35B1A /* Constants.swift */; };
 		B764706345B4FADC0A21B0B2 /* Pods_Treads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE19FD4B27E54A1E60486536 /* Pods_Treads.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +110,7 @@
 		70957461239969EE00DA5687 /* Montserrat-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.otf"; sourceTree = "<group>"; };
 		70A2516A239E5BB000699659 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		70C8DA922399B5250005EFD9 /* CurrentRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRunVC.swift; sourceTree = "<group>"; };
+		70D46D9023A40A4000C35B1A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AE19FD4B27E54A1E60486536 /* Pods_Treads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Treads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -250,6 +252,7 @@
 		7095743D2399451F00DA5687 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				70D46D9023A40A4000C35B1A /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				709574252399376C00DA5687 /* SceneDelegate.swift in Sources */,
 				70A2516B239E5BB000699659 /* LocationVC.swift in Sources */,
 				702C05F023A2AE2B00D395B9 /* Extensions.swift in Sources */,
+				70D46D9123A40A4000C35B1A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
