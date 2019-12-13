@@ -66,4 +66,21 @@ class Run: Object {
         
     }
     
+    static func getLastRun() -> Run? {
+        do {
+            let realm = try Realm()
+            var runs = realm.objects(Run.self)
+            if runs.count > 0 {
+                runs = runs.sorted(byKeyPath: "date", ascending: false)
+                return runs[0]
+            } else {
+                return nil
+            }
+        } catch {
+                return nil
+        }
+        
+    }
+    
+    
 }
