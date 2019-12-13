@@ -18,12 +18,17 @@ class CurrentRunVC: LocationVC {
     @IBOutlet weak var durationLbl: UILabel!
     @IBOutlet weak var paceLbl: UILabel!
     @IBOutlet weak var distanceLbl: UILabel!
+    @IBOutlet weak var pauseBtn: UIButton!
     
     // Vars
     var startLocation: CLLocation!
     var lastLocation: CLLocation!
+    var timer = Timer()
     
     var runDistance = 0.0
+    var pace = 0
+    var counter = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,14 +54,44 @@ class CurrentRunVC: LocationVC {
     
     func startRun() {
         manager?.startUpdatingLocation()
+        pauseBtn.setImage(#imageLiteral(resourceName: "pauseButton"), for: .normal)
+        startTimer()
     }
     
-    func end(){
+    func endRun(){
         manager?.stopUpdatingLocation()
+        //add our object to Realm
     }
     
+    func pauseRun() {
+        lastLocation = nil
+        startLocation = nil
+        timer.invalidate()
+        manager?.stopUpdatingLocation()
+        pauseBtn.setImage(#imageLiteral(resourceName: "resumeButton"), for: .normal)
+    }
+    func startTimer() {
+        durationLbl.text = counter.formatTimeDurationToString()
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
+    }
     
+    @objc func updateCounter(){
+        counter += 1
+        durationLbl.text =  counter.formatTimeDurationToString()
+        
+    }
+    
+    func calculatePace(time seconds: Int, kilometers: Double ) -> String {
+        pace = Int(Double(seconds) / kilometers.metersToKilometers(places: 2))
+        return pace.formatTimeDurationToString()
+    }
+        
     @IBAction func pauseBtnPressed(_ sender: Any) {
+        if timer.isValid {
+            pauseRun()
+        } else {
+            startRun()
+        }
     }
     
     @objc func endRunSwiped(sender: UIPanGestureRecognizer) {
@@ -71,7 +106,7 @@ class CurrentRunVC: LocationVC {
                     sliderView.center.x = sliderView.center.x + translation.x
                 } else if sliderView.center.x >= (swipeBGImageView.center.x + maxAdjust) {
                     sliderView.center.x = swipeBGImageView.center.x + maxAdjust
-                    //End Run code goes here
+                    endRun()
                     dismiss(animated: true, completion: nil)
                 } else {
                     sliderView.center.x = swipeBGImageView.center.x - minAdjust
@@ -104,6 +139,9 @@ extension CurrentRunVC: CLLocationManagerDelegate {
         } else if let location = locations.last {
             runDistance += lastLocation.distance(from: location)
             distanceLbl.text = "\(runDistance.metersToKilometers(places: 2))"
+            if counter > 0 && runDistance > 0 {
+                paceLbl.text = calculatePace(time: counter, kilometers: runDistance)
+            }
         }
         lastLocation = locations.last
     }
