@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		702C05F023A2AE2B00D395B9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702C05EF23A2AE2B00D395B9 /* Extensions.swift */; };
+		7037867823A420720044AF2F /* RunLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7037867723A420720044AF2F /* RunLogCell.swift */; };
 		70443D4023A397BF00E8EE34 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70443D3F23A397BF00E8EE34 /* Run.swift */; };
 		709574232399376C00DA5687 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709574222399376C00DA5687 /* AppDelegate.swift */; };
 		709574252399376C00DA5687 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709574242399376C00DA5687 /* SceneDelegate.swift */; };
@@ -62,6 +63,7 @@
 		2E5BE15ED7E8318986AB5FEC /* Pods-Treads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Treads.release.xcconfig"; path = "Pods/Target Support Files/Pods-Treads/Pods-Treads.release.xcconfig"; sourceTree = "<group>"; };
 		5702AEFDCFCEC1D1EA26BF4F /* Pods-Treads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Treads.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Treads/Pods-Treads.debug.xcconfig"; sourceTree = "<group>"; };
 		702C05EF23A2AE2B00D395B9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7037867723A420720044AF2F /* RunLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLogCell.swift; sourceTree = "<group>"; };
 		70443D3F23A397BF00E8EE34 /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		7095741F2399376C00DA5687 /* Treads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Treads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		709574222399376C00DA5687 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 		7095743A239944D200DA5687 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7037867723A420720044AF2F /* RunLogCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				70443D4023A397BF00E8EE34 /* Run.swift in Sources */,
 				709574292399376C00DA5687 /* RunLogVC.swift in Sources */,
 				709574272399376C00DA5687 /* BeginRunVC.swift in Sources */,
+				7037867823A420720044AF2F /* RunLogCell.swift in Sources */,
 				709574232399376C00DA5687 /* AppDelegate.swift in Sources */,
 				709574252399376C00DA5687 /* SceneDelegate.swift in Sources */,
 				70A2516B239E5BB000699659 /* LocationVC.swift in Sources */,
