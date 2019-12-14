@@ -10,6 +10,7 @@
 		702C05F023A2AE2B00D395B9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702C05EF23A2AE2B00D395B9 /* Extensions.swift */; };
 		7037867823A420720044AF2F /* RunLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7037867723A420720044AF2F /* RunLogCell.swift */; };
 		7037867A23A5714A0044AF2F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7037867923A5714A0044AF2F /* Location.swift */; };
+		7037867C23A58B2E0044AF2F /* RealmConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7037867B23A58B2E0044AF2F /* RealmConfig.swift */; };
 		70443D4023A397BF00E8EE34 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70443D3F23A397BF00E8EE34 /* Run.swift */; };
 		709574232399376C00DA5687 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709574222399376C00DA5687 /* AppDelegate.swift */; };
 		709574252399376C00DA5687 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709574242399376C00DA5687 /* SceneDelegate.swift */; };
@@ -66,6 +67,7 @@
 		702C05EF23A2AE2B00D395B9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7037867723A420720044AF2F /* RunLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLogCell.swift; sourceTree = "<group>"; };
 		7037867923A5714A0044AF2F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		7037867B23A58B2E0044AF2F /* RealmConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmConfig.swift; sourceTree = "<group>"; };
 		70443D3F23A397BF00E8EE34 /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		7095741F2399376C00DA5687 /* Treads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Treads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		709574222399376C00DA5687 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				70D46D9023A40A4000C35B1A /* Constants.swift */,
+				7037867B23A58B2E0044AF2F /* RealmConfig.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				70A2516B239E5BB000699659 /* LocationVC.swift in Sources */,
 				702C05F023A2AE2B00D395B9 /* Extensions.swift in Sources */,
 				70D46D9123A40A4000C35B1A /* Constants.swift in Sources */,
+				7037867C23A58B2E0044AF2F /* RealmConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
