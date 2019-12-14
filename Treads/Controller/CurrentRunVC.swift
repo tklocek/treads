@@ -8,7 +8,7 @@
 
 import UIKit
 import MapKit
-
+import RealmSwift
 
 class CurrentRunVC: LocationVC {
 
@@ -21,9 +21,10 @@ class CurrentRunVC: LocationVC {
     @IBOutlet weak var pauseBtn: UIButton!
     
     // Vars
-    var startLocation: CLLocation!
-    var lastLocation: CLLocation!
-    var timer = Timer()
+    fileprivate var startLocation: CLLocation!
+    fileprivate var lastLocation: CLLocation!
+    fileprivate var timer = Timer()
+    fileprivate var coordinateLocations = List<Location>()
     
     var runDistance = 0.0
     var pace = 0
@@ -61,7 +62,7 @@ class CurrentRunVC: LocationVC {
     func endRun(){
         manager?.stopUpdatingLocation()
         //add our object to Realm
-        Run.addRunToRealm(pace: pace, distance: runDistance, duration: counter)
+        Run.addRunToRealm(pace: pace, distance: runDistance, duration: counter, locations: coordinateLocations)
     }
     
     func pauseRun() {
@@ -139,6 +140,8 @@ extension CurrentRunVC: CLLocationManagerDelegate {
             
         } else if let location = locations.last {
             runDistance += lastLocation.distance(from: location)
+            let newLocation = Location(latitude: Double(lastLocation.coordinate.latitude), longitude: Double(lastLocation.coordinate.longitude))
+            coordinateLocations.insert(newLocation, at: 0)
             distanceLbl.text = "\(runDistance.metersToKilometers(places: 2))"
             if counter > 0 && runDistance > 0 {
                 paceLbl.text = calculatePace(time: counter, kilometers: runDistance)
